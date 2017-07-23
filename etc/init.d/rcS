@@ -1,4 +1,6 @@
 #!/bin/sh
+ifconfig eth0 192.168.1.17
+mount -t nfs -o nolock 192.168.1.102:/work/nfs_root /mnt
 mount -a
 mkdir /dev/pts
 mount -t devpts devpts /dev/pts
